@@ -29,7 +29,7 @@ Laravel環境構築
 
 ## ER図
 
-![ER図](./er-diagram.png)
+[ER図はこちら](src/er-diagram.png)
 
 
 ## 開発環境URL
