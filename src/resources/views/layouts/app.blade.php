@@ -24,11 +24,27 @@
                 </a>
 
                 <div class="header__nav">
-                    @if (request()->is('register'))
-                        <a href="{{ route('login') }}">login</a>
-                    @elseif (request()->is('login'))
-                        <a href="{{ route('register') }}">register</a>
-                    @endif
+
+                    @auth
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button class="header__logout">
+                                logout
+                            </button>
+                        </form>
+
+                    @else
+
+                        @if (request()->is('register'))
+                            <a href="{{ route('login') }}">login</a>
+
+                        @elseif (request()->is('login'))
+                            <a href="{{ route('register') }}">register</a>
+
+                        @endif
+
+                    @endauth
+
                 </div>
 
             </div>

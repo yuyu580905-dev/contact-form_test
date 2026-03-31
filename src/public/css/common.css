@@ -21,6 +21,8 @@
 .header__nav {
     position: absolute;
     right: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .header__nav a {
@@ -34,7 +36,23 @@
     transition: 0.3s;
 }
 
-.header__nav a:hover {
+.header__logout {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #8b7969;
+    background: #eee;
+    color: #8b7969;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header__logout {
+    appearance: none;
+}
+
+.header__nav a:hover,
+.header__logout:hover {
     background: #8b7969;
     color: #fff;
 }

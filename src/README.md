@@ -4,8 +4,9 @@
 
 Dockerビルド
 
-1. git clone git@github.com:【自分のリポジトリURL】
-2. docker-compose up -d --build
+1. git clone git@github.com:yuyu580905-dev/contact-form_test.git
+2. cd contact-form_test
+3. docker-compose up -d --build
 
 Laravel環境構築
 
@@ -31,8 +32,15 @@ Laravel環境構築
 ![ER図](./er-diagram.png)
 
 
-## 開発環境
+## 開発環境URL
 
 ・お問い合わせ画面：http://localhost/
+・管理画面：http://localhost/admin
 ・ユーザー登録：http://localhost/register
 ・phpMyAdmin：http://localhost:8080/
+
+
+### 管理画面ログインについて
+
+管理画面を利用するにはユーザー登録が必要です。
+上記URLからユーザー登録後ログインしてください。

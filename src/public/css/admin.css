@@ -113,6 +113,11 @@
     table-layout: fixed;
 }
 
+.admin-table tr:hover td {
+    background-color: #f7f4f1;
+    transition: background-color 0.2s ease;
+}
+
 .admin-table th {
     background: #8b7969;
     color: white;
