@@ -1,0 +1,29 @@
+.thanks {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks__inner {
+    text-align: center;
+}
+
+.thanks__message {
+    font-size: 24px;
+    color: #8b7969;
+    margin-bottom: 40px;
+}
+
+.thanks__button {
+    display: inline-block;
+    background: #8b7969;
+    color: #fff;
+    padding: 10px 40px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.thanks__button:hover {
+    background: #6f6154;
+}
